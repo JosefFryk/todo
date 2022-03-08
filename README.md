@@ -1,2 +1,3 @@
 # todo
-7.3.2022 - zakladni funkce serveru + mongodb
+7.3. - zakladni funkce serveru + mongodb
+8.3. - client + index 
