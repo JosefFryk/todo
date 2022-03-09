@@ -8,7 +8,7 @@ require('dotenv').config() // install dotenv, hide some info
 // hide information env
 let db,
     dbConnectionStr = process.env.DB_STRING,
-    dbName = 'todo'
+    dbName = 'todos'
 // connect with db
 MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     .then(client => {
