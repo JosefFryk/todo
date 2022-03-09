@@ -12,17 +12,18 @@
   <h1>Thing to do:</h1> 
 
   <!-- ejs template <% %> -->
-  <ul class=" todoItems"> 
-    <% for (let i=0; i < items.lengh; i++) {%>                                                              
+  <ul class="todoItems">
+    <% for(let i=0; i < items.length; i++) {%>
         <li class="item">
-                <span class='comleted'><%= items[i].thing %></span>
-            <%}else{ %>
+            <% if(items[i].completed === true) {%>
+                <span class='completed'><%= items[i].thing %></span>
+            <% }else{ %>
                 <span><%= items[i].thing %></span>
-            <%} %>
-                <span class="fa fa-trash"></span>
+            <% } %>    
+            <span class='fa fa-trash'></span>
         </li>
     <% } %>
-  </ul> 
+    </ul>
 
   <h2>Left to do: <%= left %></h2>
 
