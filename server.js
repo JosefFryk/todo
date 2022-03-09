@@ -79,7 +79,7 @@ app.delete('/deleteItem', (request, response) => {
     })
     .catch(error => console.error(error))
 })
-// just port thing
+// first is port for heroku || my port
 app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server running on port ${PORT}`)
 })
